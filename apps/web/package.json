@@ -1,0 +1,28 @@
+{
+  "name": "@bizmanager/web",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "lint": "eslint \"{src,components,pages,layouts,composables,stores}/**/*.{ts,vue}\"",
+    "type-check": "nuxt typecheck",
+    "clean": "nuxt cleanup"
+  },
+  "dependencies": {
+    "@bizmanager/shared-types": "workspace:*",
+    "@bizmanager/ui": "workspace:*",
+    "@nuxtjs/tailwindcss": "^6.12.0",
+    "@pinia/nuxt": "^0.9.0",
+    "nuxt": "^3.13.0",
+    "nuxt-icon": "^0.6.10",
+    "pinia": "^2.2.0",
+    "pinia-plugin-persistedstate": "^3.2.3",
+    "vue": "^3.5.0",
+    "vue-router": "^4.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "typescript": "^5.5.0"
+  }
+}
