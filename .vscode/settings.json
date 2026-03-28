@@ -1,0 +1,23 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "vue.inlayHints.missingProps": true,
+  "tailwindCSS.experimental.classRegex": [
+    ["class(?:Names)?\\(([^)]*?)\\)", "'([^']*?)'"],
+    ["@apply\\s+([^;\\n]*)", "\\s([^\\s]+)"]
+  ],
+  "eslint.validate": ["javascript", "typescript", "vue"]
+}
