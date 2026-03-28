@@ -1,0 +1,122 @@
+export enum Role {
+  ADMIN = 'ADMIN',
+  CASHIER = 'CASHIER',
+  TECHNICIAN = 'TECHNICIAN',
+  HR = 'HR',
+  EMPLOYEE = 'EMPLOYEE',
+}
+
+export enum ProductCategory {
+  TELEPHONIE = 'TELEPHONIE',
+  INFORMATIQUE = 'INFORMATIQUE',
+  ELECTROMENAGER = 'ELECTROMENAGER',
+  PIECES_DETACHEES = 'PIECES_DETACHEES',
+  AUTRE = 'AUTRE',
+}
+
+export enum StockMovementType {
+  IN = 'IN',
+  OUT = 'OUT',
+  ADJUST = 'ADJUST',
+  REPAIR_CONSUME = 'REPAIR_CONSUME',
+  EQUIPMENT_CONSUME = 'EQUIPMENT_CONSUME',
+}
+
+export enum InvoiceStatus {
+  PENDING = 'PENDING',
+  PARTIAL = 'PARTIAL',
+  PAID = 'PAID',
+  OVERDUE = 'OVERDUE',
+  CANCELLED = 'CANCELLED',
+}
+
+export enum InvoiceType {
+  INVOICE = 'INVOICE',
+  QUOTE = 'QUOTE',
+  CREDIT_NOTE = 'CREDIT_NOTE',
+}
+
+export enum QuoteStatus {
+  DRAFT = 'DRAFT',
+  SENT = 'SENT',
+  ACCEPTED = 'ACCEPTED',
+  REJECTED = 'REJECTED',
+  EXPIRED = 'EXPIRED',
+  CONVERTED = 'CONVERTED',
+}
+
+export enum PaymentMethod {
+  CASH = 'CASH',
+  ORANGE_MONEY = 'ORANGE_MONEY',
+  MTN_MOMO = 'MTN_MOMO',
+  BANK_TRANSFER = 'BANK_TRANSFER',
+  CARD = 'CARD',
+}
+
+export enum RepairStatus {
+  RECEIVED = 'RECEIVED',
+  DIAGNOSING = 'DIAGNOSING',
+  QUOTE_PENDING = 'QUOTE_PENDING',
+  QUOTE_ACCEPTED = 'QUOTE_ACCEPTED',
+  IN_REPAIR = 'IN_REPAIR',
+  READY = 'READY',
+  RETRIEVED = 'RETRIEVED',
+  QUOTE_REJECTED = 'QUOTE_REJECTED',
+  ABANDONED = 'ABANDONED',
+}
+
+export enum EquipmentStatus {
+  OPERATIONAL = 'OPERATIONAL',
+  UNDER_MAINTENANCE = 'UNDER_MAINTENANCE',
+  FAULTY = 'FAULTY',
+  DECOMMISSIONED = 'DECOMMISSIONED',
+}
+
+export enum EquipmentCategory {
+  COMPUTER = 'COMPUTER',
+  PRINTER = 'PRINTER',
+  CASH_REGISTER = 'CASH_REGISTER',
+  TOOL = 'TOOL',
+  UPS = 'UPS',
+  CAMERA = 'CAMERA',
+  PHONE = 'PHONE',
+  OTHER = 'OTHER',
+}
+
+export enum FaultPriority {
+  P1 = 'P1', // Critical — 2h SLA
+  P2 = 'P2', // Major — same day
+  P3 = 'P3', // Minor — 48h
+  P4 = 'P4', // Improvement — planned
+}
+
+export enum FaultStatus {
+  DECLARED = 'DECLARED',
+  DIAGNOSED = 'DIAGNOSED',
+  IN_MAINTENANCE = 'IN_MAINTENANCE',
+  RESOLVED = 'RESOLVED',
+  DECOMMISSIONED = 'DECOMMISSIONED',
+}
+
+export enum ContractType {
+  FULL_TIME = 'FULL_TIME',
+  PART_TIME = 'PART_TIME',
+  INTERN = 'INTERN',
+  CONTRACTOR = 'CONTRACTOR',
+  TEMPORARY = 'TEMPORARY',
+}
+
+export enum LeaveType {
+  PAID_LEAVE = 'PAID_LEAVE',
+  UNPAID_LEAVE = 'UNPAID_LEAVE',
+  SICK_LEAVE = 'SICK_LEAVE',
+  MATERNITY = 'MATERNITY',
+  TRAINING = 'TRAINING',
+  OTHER = 'OTHER',
+}
+
+export enum LeaveStatus {
+  PENDING = 'PENDING',
+  APPROVED = 'APPROVED',
+  REJECTED = 'REJECTED',
+}
