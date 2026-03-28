@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "vue.volar",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "prisma.prisma",
+    "rust-lang.rust-analyzer",
+    "bradlc.vscode-tailwindcss",
+    "antfu.unocss",
+    "mikestead.dotenv",
+    "humao.rest-client",
+    "eamodio.gitlens",
+    "streetsidesoftware.code-spell-checker",
+    "usernamehw.errorlens",
+    "tamasfe.even-better-toml",
+    "ms-azuretools.vscode-docker"
+  ]
+}

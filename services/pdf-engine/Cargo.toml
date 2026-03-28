@@ -1,0 +1,36 @@
+[package]
+name = "pdf-engine"
+version = "0.1.0"
+edition = "2021"
+description = "BizManager Pro — PDF generation microservice"
+
+[[bin]]
+name = "pdf-engine"
+path = "src/main.rs"
+
+[dependencies]
+axum = { version = "0.7", features = ["json", "multipart"] }
+tokio = { version = "1.40", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tower = "0.4"
+tower-http = { version = "0.5", features = ["cors", "trace", "compression-gzip"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
+printpdf = "0.7"
+qrcode = "0.14"
+image = "0.25"
+base64 = "0.22"
+chrono = { version = "0.4", features = ["serde"] }
+uuid = { version = "1.10", features = ["v4", "serde"] }
+anyhow = "1.0"
+thiserror = "1.0"
+
+[dev-dependencies]
+axum-test = "0.15"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
